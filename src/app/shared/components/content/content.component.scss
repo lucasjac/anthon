@@ -1,0 +1,184 @@
+@import '../../../../styles.scss';
+
+.content{
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    //width: calc(100vw - 40px);
+}
+
+.card{
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+    height: 255px;
+    padding: 30px;
+}
+
+// Header
+.first-row{
+    justify-content: center;
+    display: grid;
+    height: 60px;
+    grid-template-columns: 2fr 10fr 8fr;
+}
+
+.user-picture{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+}
+
+.user-picture .button-icon{
+    align-self: center;
+}
+
+.first-row .title{
+    align-self: center;
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.first-row .title:hover{
+    cursor: pointer;
+    color: $blueColor6;
+}
+
+.first-row .date{
+    align-self: center;
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+// Center
+.description{
+    color: rgb(140, 140, 140);
+    height: 75px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: initial;
+    overflow: hidden;
+}
+
+// Bottom
+.buttons{
+    display: grid;
+    border-top: 1px solid rgb(240, 240, 240);
+    grid-template-columns: 195px 1fr;
+    gap: 15px;
+    height: 60px;
+    padding: 15px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.like-buttons{
+    display: grid;
+    grid-template-columns: 90px 90px;
+    gap: 15px;
+}
+
+.like-buttons p{
+    align-self: center;
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.button{
+    align-items: center;
+    background-color: rgb(253, 253, 253);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    height: 45px;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    width: 90px;
+}
+
+.button p{
+    justify-self: left;
+}
+
+.button-icon{
+    fill: rgb(100, 100, 100);
+    justify-self: center;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: $blueColor8;
+}
+
+.button .button-icon{
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover .button-icon{
+    fill: $blueColor4;
+    transform: scale(1.3);
+}
+
+.button:hover p{
+    color: $blueColor4;
+    font-weight: 600;
+}
+
+.share-button{
+    align-items: center;
+    background-color: rgb(253, 253, 253);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    transition: all 0.2s ease-in-out;
+    width: 60px;
+}
+
+.share-button:hover{
+    cursor: pointer;
+    background-color: $blueColor8;
+}
+
+.share-button:hover .button-icon{
+    transition: all 0.2s ease-in-out;
+}
+
+.share-button:hover .button-icon{
+    fill: $blueColor4;
+    transform: scale(1.3);
+}
+
+/* -------------------------------
+TABLET
+------------------------------ */
+@media(max-width: 1200px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* -------------------------------
+MÓVIL
+------------------------------ */
+@media(max-width: 800px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

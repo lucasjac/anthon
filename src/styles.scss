@@ -1,1 +1,123 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+}
+
+// Blue colors
+$blueColor1: #17263f;
+$blueColor2: #284c80;
+$blueColor3: #2b58a2;
+$blueColor4: #2e6cc7;
+$blueColor5: #3782d9;
+$blueColor6: #4c9ce5;
+$blueColor7: #6eb8ec;
+$blueColor8: #9dd3f3;
+$blueColor9: #c5e3f8;
+$blueColor10: #deeefb;
+
+// Cream colors
+$creamColor1: #361a14;
+$creamColor2: #64362a;
+$creamColor3: #7c3f30;
+$creamColor4: #994d35;
+$creamColor5: #b9623d;
+$creamColor6: #c67649;
+$creamColor7: #d09167;
+$creamColor8: #e4c2a5;
+$creamColor9: #ebd4bd;
+$creamColor10: #f6ebde;
+
+// Fonts
+input{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+li{
+    color: white;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+p{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+input{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+:root{
+    --blueColor1: #{$blueColor1};
+    --blueColor2: #{$blueColor2};
+    --blueColor3: #{$blueColor3};
+    --blueColor4: #{$blueColor4};
+    --blueColor5: #{$blueColor5};
+    --blueColor6: #{$blueColor6};
+    --blueColor7: #{$blueColor7};
+    --blueColor8: #{$blueColor8};
+    --blueColor9: #{$blueColor9};
+    --blueColor10: #{$blueColor10};
+    --creamColor1: #{$creamColor1};
+    --creamColor2: #{$creamColor2};
+    --creamColor3: #{$creamColor3};
+    --creamColor4: #{$creamColor4};
+    --creamColor5: #{$creamColor5};
+    --creamColor6: #{$creamColor6};
+    --creamColor7: #{$creamColor7};
+    --creamColor8: #{$creamColor8};
+    --creamColor9: #{$creamColor9};
+    --creamColor10: #{$creamColor10};
+}
