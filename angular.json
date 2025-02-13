@@ -15,7 +15,6 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "baseHref": "/anthon/",
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/anthon",
