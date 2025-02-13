@@ -9,5 +9,15 @@ import { RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent { }
+export class HeaderComponent { 
+  isAlertVisible: boolean = false;
+  
+  showAlert() {
+    this.isAlertVisible = true;
+  }
+
+  hideAlert() {
+    this.isAlertVisible = false;
+  }
+}
 

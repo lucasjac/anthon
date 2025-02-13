@@ -18,7 +18,7 @@
             <input type="text" id="search">
         </div>
         <div class="right">
-            <div class="button" id="light">
+            <div class="button" id="light" (click)="showAlert()">
                 <svg version="1.1" width="20" height="20" class="button-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
                 <style type="text/css">
@@ -57,3 +57,13 @@
         </div>
     </div>
 </header>
+
+<div class="alert-wrap" *ngIf="isAlertVisible">
+    <div class="alert">
+        <svg (click)="hideAlert()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="alert-button" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
